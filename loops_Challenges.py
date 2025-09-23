@@ -27,3 +27,25 @@ for i in range(2, x//2):
         break
 else:
     print(f"{x} is not a power of {y} ")
+
+"""
+Write a Python program that counts and displays the vowels 
+of a given string ignoring the letter case.
+"""
+#User Input
+text = input("Enter a text: ")
+
+#Initialize the vowels
+vowels = 'aeiou'
+
+#Initializing a counter
+count = 0
+
+lower_text = text.lower()
+for char in lower_text:
+    if char in vowels:
+        print(char, end="")
+        count += 1
+
+print(f"The Total Number of Vowels Found{count}")
+
